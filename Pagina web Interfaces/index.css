@@ -1,0 +1,48 @@
+.main-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    list-style: none;
+  margin: 0;
+}
+.letr{
+  color: aliceblue;
+}
+.letr1{
+  color: aliceblue;
+  font-size: 30px;
+}
+nav{
+    background-color: black;
+    color:rgb(255, 255, 255);
+    padding: 10px;
+}
+  
+  .dropdown-li {
+    position: relative;
+  }
+  
+  .dropdown-li:hover .dropdown {
+    display: block;
+    opacity: 1;
+  }
+  
+  .dropdown {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    display: none;
+    background: rgb(0, 0, 0);
+  }
+  
+  .dropdown li {
+    list-style: none;
+  }
+  .imgcar{
+    width: 20px;
+    border: 0cm;
+}
