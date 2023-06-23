@@ -5,8 +5,9 @@
 	font-family: 'Open Sans';
 }
 body{
-	background-image: url(img/fondo.jpg);
-	background-size: cover;
+	background-image: url("/Pagina\ web\ Interfaces/Imagenes/fondo 1.jpg");
+      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+      background-repeat: no-repeat; /
 }
 /*INICIO MENU DE NAVEGACION / OPCIONES */
 h1{
