@@ -1,5 +1,5 @@
 body{
-  background-image: url("/Pagina\ web\ Interfaces/Imagenes/fondo 1.jpg");
+  background-image: url("Imagenes/fondo 1.jpg");
       background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
       background-repeat: no-repeat; /
 }
