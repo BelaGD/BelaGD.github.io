@@ -10,6 +10,10 @@ body{
       background-repeat: no-repeat; /
 }
 /*INICIO MENU DE NAVEGACION / OPCIONES */
+.imgcar{
+	width: 20px;
+	height: auto;
+}
 h1{
   text-align: center;
   padding: 20px;

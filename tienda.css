@@ -72,7 +72,10 @@ nav{
 }
 /*FIN MENU DE NAVEGACION / OPCIONES */
   
-
+.imgcar{
+	width: 20px;
+	height: auto;
+}
   
   .product {
     border: 1px solid #ccc;

@@ -1,4 +1,7 @@
-
+.imgcar{
+	width: 20px;
+	height: auto;
+}
 h1{
     text-align: center;
     padding: 20px;
