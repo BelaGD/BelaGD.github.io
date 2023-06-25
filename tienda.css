@@ -1,7 +1,5 @@
 body{
-  background-image: url("Imagenes/fondo 1.jpg");
-      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
-      background-repeat: no-repeat; /
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0),rgb(11, 185, 212));
 }
 h1{
   text-align: center;
