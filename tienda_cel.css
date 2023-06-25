@@ -1,7 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-	background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgb(25, 204, 195));
-      height: 100vh;
-    width: 100vw;
+background-color: white;
+    min-height: 100vh;
+
+    justify-content: center;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1{
   text-align: center;
@@ -67,106 +76,100 @@ nav{
 	text-decoration: none;
 	padding: 15px 15px 15px 20px;
 }
+.imgcar{
+	width: 20px;
+	height: auto;
+}
 
 #html{
 	margin: auto;
 	max-width: 900px;
 	background: white;
 }
-.imgcar{
-	width: 20px;
-	height: auto;
-}
-/*FIN MENU DE NAVEGACION / OPCIONES */
-.laptops{
-  width: 300px;
-  height: auto;
-}
 
-  
-  .product {
-    background-color: white;
+.product {
+    background: black; 
     background-blend-mode: overlay;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     padding: 10px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    width: 1420px;
-  }
-  .filas{
-      height: 600px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: justify;
-      padding: 15px;
-      bottom: 2px;
-      border-color: black;
-  }
-  
-  .product img {
-    max-width: 100%;
-    height: 250px;
-    margin-top: 30px;
-    
-    
-  }
-  .tipro{
+    color: #fff;
 
-    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(2, 225, 255, 0.5));
-    width: 550px;                          
-    height: 120px;
-  } 
+  }
+.imgcel{
+    height:100%;
+    width: 100%;
+}
 
 
-    @keyframes aparecer {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-    
-    @keyframes desaparecer {
-      0% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-    
-    .tipro h1  {
-      animation: aparecer 1s ease-in-out forwards;
-      margin-top: 15px;
-      padding: 10px;
-      text-align: center;
-    }
-    
-    .tipro h1:hover {
-      animation: desaparecer 1s ease-in-out forwards;
-    }
-  
-  .texts{
-    
+
+  .tarjeta{
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    position: relative;
+    margin-top: 2rem;
+    border-radius: 7px;
+    box-shadow: 0 0 30px rgb(25, 212, 240);
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .tarjeta .tarjeta-imagen{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20PX;
+  }
+  .tarjeta .tarjeta-contenido{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 7px;
+    transform: translateY(100%);
+    transition: 400ms ease;
+    padding: 20PX;
+  }
+.tarjeta .tarjeta-contenido .tarjeta-boton{
     color: #000000;
-    font-family:'Dancing Script', cursive;
-  }
-  .product h3 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
+    background-color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 7px;
+    font-size: 10px;
+    font-weight: bold;
+    border: none;
+    outline: 3px solid white;
+    outline-offset: 4px;
+    
+}
+
+.tarjeta .tarjeta-imagen:hover + .tarjeta-contenido,
+.tarjeta-contenido:hover {
+    transform: translateY(0);
+}
   
-  .product p {
-    margin-bottom: 10px;
-  }
-  
-  .product button {
+  /* ... código CSS anterior ... */
+
+
+  /* ... código CSS posterior ... */
+  .tarjeta-boton {
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -178,7 +181,7 @@ nav{
     margin-top: 10px;
     cursor: pointer;
   }
-  .product button {
+  .tarjeta-boton {
     /* Estilos anteriores del botón */
   
     /* Estilos para el efecto de transición */
@@ -186,7 +189,7 @@ nav{
     overflow: hidden;
   }
   
-  .product button:before {
+  .tarjeta-boton:before {
     content: '';
     position: absolute;
     top: 0;
@@ -197,7 +200,7 @@ nav{
     transition: left 0.3s;
   }
   
-  .product button:hover:before {
+  .tarjeta-boton:before {
     left: 0;
   }
   
@@ -214,6 +217,3 @@ nav{
     text-align: center;
     display: none;
   }
-  
-  /* ... código CSS posterior ... */
-  
