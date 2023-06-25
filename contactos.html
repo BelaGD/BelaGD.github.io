@@ -1,66 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contactos</title>
-	<link rel="stylesheet" href="contactos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="contactos.css">
 </head>
-<!--INICIO MENU DE NAVEGACIO / OPCIONES-->
-<header>
-  <div class="titulo">
-    <h1>TecnoLANDIA</h1>
-  </div>
-</header>
 <body>
-	<nav>
-		<ul class="menu-horizontal">
+  <!--INICIO MENU DE NAVEGACION/ OPCIONES-->
+  <header>
+    <div class="titulo">
+      <h1>TecnoLANDIA</h1>
+    </div>
+  </header>
+  <nav>
+    <ul class="menu-horizontal">
       <li class="letr" class="li"> <img class="imglog" src="Imagenes/TecnoLandia logo.jpg" alt=""></button></a></li>
-			<li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html">Inicio</a></li>
       <li><a href="nosotros.html">Nosotros</a></li>
-			<li>
-				<a href="tienda.html">Tienda</a>
-				<ul class="menu-vertical">
-					<li><a href="tienda.html">Laptops</a></li>
-					<li><a href="tienda.html">Celulares</a></li>
-					<li><a href="tienda.html">Perifericos</a></li>
-				</ul>
-			</li>
-			<li><a href="contactos.html">Contacto</a></li>
-			<li class="letr" class="li"> <a href="/login.html"><button class="login"><img class="imgcar" src="/Imagenes/icono login.png" alt=""></button></a></li>
-			<li class="letr" class="li"> <a href="carrito.html"><button class="carrito"><img class="imgcar" src="/Imagenes/icono carrito.png" alt=""></button></a></li>
-		</ul>
-	</nav>
-  <!--FIN MENU DE NAVEGACION / OPCIONES-->
-	<br>
-  	<main>
-		<div class="form-contact">
-		<div id="container">
-			<h2>Contacto</h2>
-			<p>Ponte en contacto con nosotros</p>
-			<div class="img1">
-				<a href="#"><i class="fa fa-instagram"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				
-			</div>
-			<form class="contact" method="POST"><br>
-				<label for="nombres">Nombres</label>
-				<input type="text" name="nombres" id="nombres" placeholder="Ingresa tu nombre"  required><br><br>
-			
-				<label for="correo">Correo</label>
-				<input type="text" name="correo" id="correo" placeholder="Ingresa tu correo"  required><br>
-			
-				<label for="nombres">Celular</label>
-				<input type="text" name="celular" id="celular" placeholder="Ingresa tu celular"  required><br>
-			
-				<label for="mensaje">Mensaje</label>
-				<textarea name="mensaje" id="mensaje" placeholder="Ingresa tu requerimiento"  required></textarea>
-				<button>Enviar</button>
-			</form>
-		</div>
-		</div>
-  	</main>
+      <li><a href="tienda.html">Tienda</a>
+        <ul class="menu-vertical">
+          <li><a href="tienda.html">Laptops</a></li>
+          <li><a href="tienda.html">Celulares</a></li>
+          <li><a href="tienda.html">Perifericos</a></li>
+        </ul>
+      </li>
+      <li><a href="contactos.html">Contacto</a></li>
+      <li class="letr" class="li"> <a href="/login.html"><button class="login"><img class="imgcar" src="/Imagenes/icono login.png" alt=""></button></a></li>
+      <li class="car"><a href="carrito.html" >
+        <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+        </svg></a>
+      </li>
+    </ul>
+  </nav>
+  <!--FIN MENU DE NAVEGACIO / OPCIONES-->
+  <h1>Contacto</h1>
+  <div class="subtitulo">
+    <div class="logo">
+      <img src="Imagenes/contacto/TecnoLandia logo.jpg" alt="Logo de la empresa">
+    </div>
+    <h2>Encuéntranos en:</h2>
+  </div>
+  <br>
+  <div class="store-locations">
+    <div class="location">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Imagenes/contacto/58214.jpg" alt="Avatar" style="width:200px;height:190px;">
+          </div>
+          <div class="flip-card-back">
+            <p><center><b>Sucursales</b></center></p>
+            <p>📌 Sucursal Matriz Latacunga</p>
+            <p>📌 Sucursal 1 Quito</p>
+            <p>📌 Sucursal 2 Machala</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="location">
+      <h3>Sucursal Quito</h3>
+      <p>Dirección: Av. Amazonas</p>
+      <p>Teléfono: 02-147-1298</p>
+      <div class="location-details">
+        <p><b>Detalles</b></p>
+        <p>Horario de atención: 9:00 AM - 8:00 PM</p>
+      </div>
+    </div>
+    <div class="location">
+      <h3>Sucursal Latacunga</h3>
+      <p>Dirección: San Felipe</p>
+      <p>Teléfono: 02-354-7845</p>
+      <div class="location-details">
+        <p><b>Detalles</b></p>
+        <p>Horario de atención: 9:00 AM - 9:00 PM</p>
+      </div>
+    </div>
+    <div class="location">
+      <h3>Sucursal Machala</h3>
+      <p>Dirección: Carrera 16ava Oeste</p>
+      <p>Teléfono: 03-48-3270</p>
+      <div class="location-details">
+        <p><b>Detalles</b></p>
+        <p>Horario de atención: 9:00 AM - 6:00 PM</p>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="contain">
+    <div class="wrapper">
+      <div class="contacts">
+        <br><br>
+        <main>
+          <svg viewbox="0 0 100 20">
+            <defs>
+              <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="10%" stop-color="#FAFEFE"/>
+                <stop offset="90%" stop-color="#09F7EF"/>
+              </linearGradient>
+              <pattern id="wave" x="0" y="0" width="80" height="20" patternUnits="userSpaceOnUse">
+                <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                    <animateTransform
+                      attributeName="transform"
+                      begin="0s"
+                      dur="1.5s"
+                      type="translate"
+                      from="0,0"
+                      to="40,0"
+                      repeatCount="indefinite" 
+                    />
+                </path>
+              </pattern>
+            </defs>
+            <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">Contacto</text>
+            <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.1">Contacto</text>
+          </svg>
+        </main>
+        <div class="social-media">
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https//www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <ul>
+          <li><p>Matriz</p></li>
+          <li>San Felipe St.</li>
+          <li>02 354 7845</li>
+          <li>ventas@tecnolandia.ec</li>
+        </ul>
+        <ul>
+          <center>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31914.39814296474!2d-78.65109659616918!3d-0.9237663298478597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d4604b05977bed%3A0x19dd803ba8e3fd7a!2sSan%20Felipe%2C%20Latacunga!5e0!3m2!1ses!2sec!4v1687573266780!5m2!1ses!2sec" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </center>
+        </ul>
+      </div>
+      <div class="form">
+        <br><br><br><br><br>
+        <h3>Llena tus datos</h3>
+        <div>
+          <div id="overlay">
+            <div id="mensaje-confirmacion">
+              <p>¡La información se ha enviado correctamente!</p>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="mi-formulario">
+              <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Celular:</label>
+                <input type="text" id="fono" name="fono" placeholder="Ingresa tu celular" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <!-- Inicio Apartado Marcas -->
+  <div class="marcas">
+    <h2 class="mar">Principales Marcas</h2>
+    <div class="marca">
+      <img src="Imagenes/contacto/patrocinador1.jpg" alt="Apple">
+    </div>
+    <div class="marca">
+      <img src="Imagenes/contacto/marca1.jpg" alt="Samsung">
+    </div>
+    <div class="marca">
+      <img src="Imagenes/contacto/marca3.png" alt="Acer">
+    </div>
+    <div class="marca">
+      <img src="Imagenes/contacto/marcas2.png" alt="HP">
+    </div>
+    <div class="marca">
+      <img src="Imagenes/contacto/marca0.png" alt="Asus">
+    </div>
+    <div class="marca">
+      <img src="Imagenes/contacto/Logo-Lenovo.png" alt="Lenovo">
+    </div>
+    <div class="marca">
+      <img src="Imagenes/contacto/dell1.png" alt="Dell">
+    </div>
+  </div>
+  <!-- Fin Apartado Marcas -->
+  </div>
+  <br><br> 
+  <script src="contacto.js"></script>
 </body>
 </html>

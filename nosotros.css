@@ -4,17 +4,15 @@
 	height: auto;
 }
 body{
-  background-image: url("Imagenes/fondo 1.jpg");
-      background-size: cover; 
-      background-repeat: no-repeat; /
+	/*background-image: url("Imagenes/fondo 1.jpg");*/
+    background-size: cover; 
+    background-repeat: no-repeat; /
 }
-
 h1{
   text-align: center;
   padding: 20px;
   font-size: 40px;
   margin-top: 50px;
-  
 }
 .titulo{
   background-color: #000000;
@@ -31,52 +29,296 @@ h1{
 }
 nav{
   width: 100%;
-	margin: auto;
-	background-color: #000000;
-	font-size: 20px;
+  margin: auto;
+  background-color: #000000;
+  font-size: 20px;
   margin-top: -30px;
 }
 .menu-horizontal{
-  width: 90%;
-  height: 55px;
-	list-style: none;
-	display: flex;
-	justify-content: space-around;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 .menu-horizontal > li > a{
-	display: block;
-	padding: 15px 20px;
-	color: white;
-	text-decoration: none;
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
 }
 .menu-horizontal > li:hover{
-	background-color: rgb(23, 164, 179);
+  background-color: rgb(23, 164, 179);
 }
 .menu-vertical{
-	position: absolute;
-	display: none;
-	list-style: none;
-	width: 200px;
-	background-color: rgb(0, 0, 0);
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: rgba(0, 0, 0, .5);
 }
 .menu-horizontal li:hover .menu-vertical{
-	display: block;
+  display: block;
 }
 .menu-vertical li:hover{
-	background-color:  rgb(23, 164, 179);
-
+  background-color: black;
 }
-
+  
 .menu-vertical li a{
-	display: block;
-  color: #ffffff;
-	text-decoration: none;
-	padding: 15px 15px 15px 20px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 15px 15px 20px;
 }
-
+  
 #html{
-	margin: auto;
-	max-width: 900px;
-	background: white;
+  margin: auto;
+  max-width: 900px;
+  background: white;
 }
 /*FIN MENU DE NAVEGACION / OPCIONES */
+
+/* Estilos de la sección de sobre nosotros */
+/* Acerca de */
+.img-container {
+  margin: 20px;
+  text-align: center;
+  border-radius: 500px;
+}
+main {
+  padding: 20px;
+}
+main h1{
+  color:rgb(0, 0, 0);
+}
+/* Estilo Redes social*/
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.social-media a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: rgb(23, 164, 179);/* Color de fondo de los iconos */
+  color: #ffffff; /* Color del icono */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.social-media a:hover {
+  background-color: #404444; /* Color de fondo al pasar el mouse por encima de Facebook */
+}
+.descripcion{
+  font-size: 19px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.ban{
+  margin:51px;
+  align-items: center;
+  border-radius: 80%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  background-color: #000000;
+  color:white;
+  border-radius: 25px;
+  margin:5px;
+}
+.column1 {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  background-color: #ffffff;
+  color:white;
+}
+.column h2{
+  font-size: 25px;
+  color: rgb(23, 164, 179);
+  text-align: center;
+}
+.column p{
+  padding: 15px;
+  font-size: 18px;
+  text-align: justify;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .descripcion{
+    width: 100%;
+  }
+}
+
+.subtitle {
+  font-size: 30px;
+  color: rgb(23, 164, 179);
+  text-align: center;
+  animation-name: subtitle-animation;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes subtitle-animation {
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+  display: flex;
+  margin-top: 10px;
+  border-radius: 60px;
+}
+.container h2{
+  color: white;
+  border-radius: 90px;
+}
+.column-black {
+  background-color: #000000;
+  border-radius:75px;
+}
+.lg1{
+  align-items: center;
+}
+p{
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    flex-basis: 100%;
+  }
+  .column1 {
+    flex-basis: 100%;
+  }
+  .container {
+    flex-basis: 100%;
+  }
+}
+
+/* Container de imagenes*/
+.container-img{
+  width: 40%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  margin: 0 auto;
+}
+.mySlides{
+  display: none;
+}
+.mySlides img{
+  width: 100%;
+}
+.prev,
+.next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #f9ffff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6 ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  border:  solid #ffffff 2px;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.elements{
+  text-align: center;
+}
+.quadrate{
+  cursor: pointer;
+  height: 4px;
+  width: 80px;
+  margin: 0 5px;
+  background-color: #0eb6c2;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border-radius: 2px;
+}
+.active, .quadrate:hover{
+  background-color: #fff;
+}
+@media screen and (max-width:768px) {
+  .container-img{
+    width: 100%;
+  }
+}
+@media screen and (max-width:48px) {
+  .prev,
+  .next{
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mySlides {
+    flex-wrap: nowrap;
+    animation: slide-mobile 10s infinite;
+  }
+  .mySlides img {
+    width: 100%;
+    height: auto;
+  }
+}
+.btnP{
+  color:#ffffff;
+  background-color: #000000;
+  font-size: 20px;
+  padding: 8px;
+}
+/* Boton Fin*/
+.botonF {
+  display: block;
+  margin: 0 auto;
+  background-color:rgb(23, 164, 179);
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botonF:hover {
+  background-color: #2663d4;
+}
+
+@media screen and (max-width: 600px) {
+  .botonF {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
