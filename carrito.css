@@ -80,3 +80,137 @@ nav{
 	background: white;
 }
 /*FIN MENU DE NAVEGACION / OPCIONES */
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    height: 400px;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #fbfcfd;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    overflow-y: scroll;
+}
+#vaciar-carrito, #procesar-pedido {
+    padding: 8px;
+    margin-top:2px;
+    text-align: center;
+}
+.dropdown-menu.show {
+    display: block;
+}
+.button-vaciar{
+    background:#f1f5f6;
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    color:  #f2f2f2;
+    font-weight: 700;
+}
+.button-vaciar:hover{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #f4f9fa;
+    color: #f2f2f2;
+}
+.button-pedido{
+    background:#f8f9f8;
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    color:  #f2f2f2;
+    font-weight: 700;
+}
+.button-pedido:hover{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #f0f6f1;
+    color: #f2f2f2;
+}
+
+
+main{
+    padding-top: 6rem;
+}
+/*carrito*/
+#cargando{
+    display: none;
+}
+.container-carrito h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.container-carrito form{
+    width: 650px;
+    margin:auto;
+    padding: 10px 20px;
+}
+.container-carrito form .contenido{
+    
+    padding: 10px 20px;
+}
+.container-carrito form .titulo{
+    font-size: 20px;
+    font-weight: 200;    
+}
+.container-carrito form .titulo input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 8px;
+    border:1px solid  #f7f9fb;
+}
+#total{
+    border: 0; 
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+#procesar-compra{
+    border: 0;
+    height: 49px;
+    font-size: 16px;
+    outline: none;
+    margin: 50px;
+}
+#volver{
+    margin: 48px;
+}
+.botones-envio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tabla {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+.tabla td, .tabla th {
+    padding: .75rem;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+
+}
+.tabla thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
