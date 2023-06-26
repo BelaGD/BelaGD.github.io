@@ -7,40 +7,46 @@
     <link rel="stylesheet" href="/index.css">
 </head>
 <body>
-    <header class="header">
-        <div class="menu container">
-            <a href="#" class="logo" >TecnoLandia</a>
-            <input type="checkbox" id="menu" />
-            <label for="menu">
-                <img src="Imagenes/menu.png" class="menu-icono" alt="">
-            </label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nosostros</a></li>
-                    <li><a href="#">Tienda</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+    <header>
+		<div class="titulo">
+		  <h1>TecnoLANDIA</h1>
+		</div>
+	  </header>
+	  <nav>
+		<ul class="menu-horizontal">
+		  <li class="letr" class="li"> <img class="imglog" src="Imagenes/TecnoLandia logo.jpg" alt=""></button></a></li>
+		  <li><a href="index.html">Inicio</a></li>
+		  <li><a href="nosotros.html">Nosotros</a></li>
+		  <li><a href="tienda.html">Tienda</a>
+			<ul class="menu-vertical">
+			  <li><a href="tienda.html">Laptops</a></li>
+			  <li><a href="tienda_cel.html">Celulares</a></li>
+			</ul>
+		  </li>
+		  <li><a href="contactos.html">Contacto</a></li>
+		  <li class="letr" class="li"> <a href="/login.html"><button class="login"><img class="imgcar" src="/Imagenes/icono login.png" alt=""></button></a></li>
+		  <li class="car"><a href="carrito.html" >
+			<svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+			</svg></a>
+		  </li>
+		</ul>
+	  </nav>
         </div>
         <div class="header-content container">
             <div class="header-txt">
-                <h1>Tienes <br> <span>hambre ?</span> </h1>
+                <h1>Buscas <br> <span>PC Nueva ?</span> </h1>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Culpa consectetur hic ipsa eaque voluptas vero laboriosam 
-                    architecto ratione illo error, doloremque corrupti aspernatur 
-                    itaque perspiciatis at, maiores sint molestias ex!
+                    ¡Bienvenido a nuestro negocio de laptops, donde tus necesidades tecnológicas encuentran su mejor compañero! Descubre nuestra amplia selección de laptops de última generación, diseñadas para brindarte potencia, rendimiento y estilo. Ya sea que necesites una laptop para el trabajo, el estudio o el entretenimiento, aquí encontrarás la solución perfecta para ti.
                 </p>
 
                 <div class="buttons">
-                    <a href="#" class="btn-1" >Ordena Ahora</a>
-                    <a href="#" class="btn-1" >Ver menu</a>
+                    <a href="/carrito.html" class="btn-1" >Ordena Ahora</a>
+                    <a href="/tienda.html" class="btn-1" >Ver Tienda</a>
                 </div>
             </div>
             <div class="header-img">
-                <img src="Imagenes/right.png" alt="">                
+                <img src="/Imagenes/index/right.png" alt="">                
             </div>
         </div>
         
@@ -49,43 +55,55 @@
 
     <section class="menu-pl container">
 
-        <h2>Nuestro top <span>menu</span> </h2>
+        <h2>Nuestro top <span>Laptops</span> </h2>
 
         <div class="general-content">
 
             <div class="general-txt">
-                <img src="Imagenes/pl1.jpg" alt="">
-                <h3>Platillo lorem</h3>
+                <img src="/Imagenes/index/victus.png" alt="">
+                <h3>Victus HP</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Modelo: 62C01LA#ABM
+                    Pantalla: 16.1" FHD
+                    Sistema Operativo Windows 11 Español
+                    Procesador: Intel® Core™ i5-11400H hasta 4,5 GHz
                 </p>
                 <div class="prices">
-                    <span>$15.00</span>
-                    <a href="#" class="btn-2"> Comprar</a>
+                    <span>$1000.99</span>
+                    <a href="tienda.html" class="btn-2"> Comprar</a>
                 </div>
             </div>
 
             <div class="general-txt">
-                <img src="Imagenes/pl2.jpg" alt="">
-                <h3>Platillo lorem</h3>
+                <img src="/Imagenes/index/asus.jpg" alt="">
+                <h3>Asus Rog Strix</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Pantalla IPS FHD de 15.6 pulgadas
+                    300 Hz, NVIDIA GeForce RTX 3050
+                    AMD Ryzen 7 6800H, DDR5 de 16 GB
+                    SSD de 1 TB, teclado RGB
+                    Windows 11 Home
                 </p>
                 <div class="prices">
-                    <span>$15.00</span>
-                    <a href="#" class="btn-2"> Comprar</a>
+                    <span>$979.99</span>
+                    <a href="tienda.html" class="btn-2"> Comprar</a>
                 </div>
             </div>
 
             <div class="general-txt">
-                <img src="Imagenes/pl3.jpg" alt="">
-                <h3>Platillo lorem</h3>
+                <img src="/Imagenes/index/asus tuf.jpg" alt="">
+                <h3>Aus TUF</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laptop para juegos de 144 Hz, 15.6 pulgadas FHD
+                    Intel Core i5-10300H
+                    16 GB de RAM
+                    1 TB SSD
+                    NVIDIA GeForce GTX 1650
+                    Windows 10 Home
                 </p>
                 <div class="prices">
-                    <span>$15.00</span>
-                    <a href="#" class="btn-2"> Comprar</a>
+                    <span>$999.99</span>
+                    <a href="tienda.html" class="btn-2"> Comprar</a>
                 </div>
             </div>
             <span></span>
@@ -98,113 +116,68 @@
             <div class="about-txt">
                 <h2>Oferta especial <br> <span>Una sorpresa para ti</span> </h2>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    ¡Atención a todos los amantes de la tecnología! ¡No te pierdas esta oferta de ensueño! Ahora puedes tener en tus manos el último modelo de celular a un precio increíblemente rebajado. Disfruta de todas las funciones y características de vanguardia que este dispositivo tiene para ofrecer a un precio inigualable. ¡No esperes más! Aprovecha esta oferta por tiempo limitado y llévate tu nuevo compañero tecnológico a un precio que no podrás resistir. ¡Date prisa y adquiere tu celular en descuento antes de que se agoten!
                 </p>
                 <div class="hamburger">
-                    <span>$25</span>
-                    <a href="#" class="btn-2"> Ordena ahora</a>
+                    <span>$1000.99</span>
+                    <a href="tienda.html" class="btn-2"> Ordena ahora</a>
                 </div>
             </div>
 
             <div class="about-img">
-                <img src="Imagenes/hambuger.png" alt="">
+                <img src="/Imagenes/index/Mi proyecto (2).png" alt="">
             </div>
         </div>
     </section>
 
     <section class="menu-pl container">
 
-        <h2>Nuestro menu <span>menu</span> </h2>
+        <h2>Nuestro top <span>Celulares</span> </h2>
 
         <div class="general-content">
 
             <div class="general-txt">
-                <img src="Imagenes/pl1.jpg" alt="">
-                <h3>Platillo lorem</h3>
+                <img src="/Imagenes/index/SAMSUNG S10e.jpg" alt="">
+                <h3>Sumsung S10e</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptatum praesentium in, accusantium fuga aut a architecto 
-                    laborum deserunt molestiae sit, sint, sunt quaerat repellat 
-                    veritatis. Hic incidunt repudiandae temporibus animi.
+                    Marca SAMSUNG
+                    Nombre del modelo Galaxy S10e
+                    Operador inalámbrico More information Desbloqueado
+                    Sistema operativo More information Android
                 </p>
                 <div class="prices">
-                    <span>$15.00</span>
-                    <a href="#" class="btn-2"> Comprar</a>
+                    <span>$1000.99</span>
+                    <a href="tienda.html" class="btn-2"> Comprar</a>
                 </div>
             </div>
 
             <div class="general-txt">
-                <img src="Imagenes/pl2.jpg" alt="">
-                <h3>Platillo lorem</h3>
+                <img src="/Imagenes/index/google pixel a7.jpg" alt="">
+                <h3>Google Pixel A7</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptatum praesentium in, accusantium fuga aut a architecto 
-                    laborum deserunt molestiae sit, sint, sunt quaerat repellat 
-                    veritatis. Hic incidunt repudiandae temporibus animi.
+                    Marca Google
+                    Nombre del modelo Pixel 7a
+                    Operador inalámbrico More information Todas las empresas de transportes
+                    Sistema operativo More information Android 13.0
                 </p>
                 <div class="prices">
-                    <span>$15.00</span>
-                    <a href="#" class="btn-2"> Comprar</a>
+                    <span>$1000.99</span>
+                    <a href="tienda.html" class="btn-2"> Comprar</a>
                 </div>
             </div>
 
             <div class="general-txt">
-                <img src="Imagenes/pl3.jpg" alt="">
-                <h3>Platillo lorem</h3>
+                <img src="/Imagenes/index/Redmi Note 12.jpg" alt="">
+                <h3>Redmi Note 12</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptatum praesentium in, accusantium fuga aut a architecto 
-                    laborum deserunt molestiae sit, sint, sunt quaerat repellat 
-                    veritatis. Hic incidunt repudiandae temporibus animi.
+                    MMarca Xiaomi
+                    Nombre del modelo Redmi Note 12 0.14 oz lte
+                    Operador inalámbrico More information 3
+                    Sistema operativo More information MIUI 14, Android 12
                 </p>
                 <div class="prices">
-                    <span>$15.00</span>
-                    <a href="#" class="btn-2"> Comprar</a>
-                </div>
-            </div>
-
-            <div class="general-txt">
-                <img src="Imagenes/pl4.jpg" alt="">
-                <h3>Platillo lorem</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptatum praesentium in, accusantium fuga aut a architecto 
-                    laborum deserunt molestiae sit, sint, sunt quaerat repellat 
-                    veritatis. Hic incidunt repudiandae temporibus animi.
-                </p>
-                <div class="prices">
-                    <span>$15.00</span>
-                    <a href="#" class="btn-2"> Comprar</a>
-                </div>
-            </div>
-
-            <div class="general-txt">
-                <img src="Imagenes/pl5.jpg" alt="">
-                <h3>Platillo lorem</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptatum praesentium in, accusantium fuga aut a architecto 
-                    laborum deserunt molestiae sit, sint, sunt quaerat repellat 
-                    veritatis. Hic incidunt repudiandae temporibus animi.
-                </p>
-                <div class="prices">
-                    <span>$15.00</span>
-                    <a href="#" class="btn-2"> Comprar</a>
-                </div>
-            </div>
-
-            <div class="general-txt">
-                <img src="Imagenes/pl6.jpg" alt="">
-                <h3>Platillo lorem</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptatum praesentium in, accusantium fuga aut a architecto 
-                    laborum deserunt molestiae sit, sint, sunt quaerat repellat 
-                    veritatis. Hic incidunt repudiandae temporibus animi.
-                </p>
-                <div class="prices">
-                    <span>$15.00</span>
-                    <a href="#" class="btn-2"> Comprar</a>
+                    <span>$1000.99</span>
+                    <a href="tienda.html" class="btn-2"> Comprar</a>
                 </div>
             </div>
             <span></span>
@@ -214,66 +187,44 @@
     <section class="info container">
 
         <div class="info-img">
-            <img src="Imagenes/left.jpg" alt="">
+            <img src="/Imagenes/index/TecnoLandia logo.jpg" alt="">
         </div>
 
         <div class="info-txt">
             <h2>Sobre <span> Nosotros</span> </h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Iusto totam praesentium voluptas, distinctio veritatis 
-                ipsum unde velit sint facere at vero repellendus. 
-                Ducimus cum aliquid architecto, ea ipsam vel maiores?
+                ¡Descubre todo lo que necesitas saber sobre nuestra empresa líder en su industria! Sumérgete en un mundo de información detallada y fascinante sobre nuestra misión, valores y logros destacados. Desde nuestra historia hasta nuestros productos y servicios innovadores, encontrarás todo en un solo lugar. ¿Estás listo para obtener una visión más profunda? No pierdas más tiempo, ¡aplasta el botón de abajo y descubre un mar de conocimientos sobre nuestra empresa!
             </p>
-            <a href="#" class="btn-1"> Informacion</a>
+            <a href="nosotros.html" class="btn-1"> Informacion</a>
         </div>
     </section>
 
     <footer class="footer">
 
-        <div class="footer-content container">
-
-            <div class="link">
-                <h3>Lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                </ul>
-            </div>
-
-            <div class="link">
-                <h3>Lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                </ul>
-            </div>
-
-            <div class="link">
-                <h3>Lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                </ul>
-            </div>
-
-            <div class="link">
-                <h3>Lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                </ul>
-            </div>
-
-        </div>
+        <div class="marcas">
+    <h3 class="mar">Principales Marcas</h3>
+    <div class="marca">
+      <img src="Imagenes/contacto/patrocinador1.jpg" alt="Apple">
+    </div>
+    <div class="marca">
+      <img src="Imagenes/contacto/marca1.jpg" alt="Samsung">
+    </div>
+    <div class="marca">
+      <img src="Imagenes/contacto/marca3.png" alt="Acer">
+    </div>
+    <div class="marca">
+      <img src="Imagenes/contacto/marcas2.png" alt="HP">
+    </div>
+    <div class="marca">
+      <img src="Imagenes/contacto/marca0.png" alt="Asus">
+    </div>
+    <div class="marca">
+      <img src="Imagenes/contacto/Logo-Lenovo.png" alt="Lenovo">
+    </div>
+    <div class="marca">
+      <img src="Imagenes/contacto/dell1.png" alt="Dell">
+    </div>
+  </div>
     </footer>
 
 </body>

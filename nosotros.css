@@ -47,7 +47,7 @@ nav{
   text-decoration: none;
 }
 .menu-horizontal > li:hover{
-  background-color: rgb(23, 164, 179);
+  background-color: #17a4b3;
 }
 .menu-vertical{
   position: absolute;

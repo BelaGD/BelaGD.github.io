@@ -19,7 +19,7 @@
             <div class="error-message" id="password-error"></div>
           </div>
 
-          <a href="#" onclick="validateForm()">
+          <a href="index.html" onclick="return validateForm()">
             <span></span>
             <span></span>
             <span></span>
@@ -35,28 +35,30 @@
           var password = document.forms["loginForm"]["password"].value;
           var usernameError = document.getElementById("username-error");
           var passwordError = document.getElementById("password-error");
-          
+      
           // Restablecer mensajes de error
           usernameError.innerHTML = "";
           passwordError.innerHTML = "";
-          
+      
           // Validar si los campos están vacíos
           if (username === "") {
             usernameError.innerHTML = "Completar este campo";
             return false; // Detener el envío del formulario
           }
-          
+      
           if (password === "") {
             passwordError.innerHTML = "Completar este campo";
             return false; // Detener el envío del formulario
           }
-          
+      
           // Validar el usuario y la contraseña aquí
-          if (username === "usuario" && password === "contraseña") {
+          if (username === "usuario" && password === "11234") {
             alert("Inicio de sesión exitoso");
             // Aquí puedes redirigir a otra página o realizar otras acciones después del inicio de sesión exitoso
+            return true; // Permitir el envío del formulario
           } else {
             alert("Usuario o contraseña incorrectos");
+            return false; // Detener el envío del formulario
           }
         }
       </script>
