@@ -90,6 +90,62 @@ main {
 main h1{
   color:rgb(0, 0, 0);
 }
+/* Marcas*/
+.mar {
+  text-align:center;
+  font-size: 30px;
+  color: #ffffff;
+  opacity: 0;
+  padding-top: 2px;
+  animation: desvanecer 2s ease-in-out infinite alternate;
+}
+
+@keyframes desvanecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mar {
+    font-size: 36px;
+  }
+}
+/* ------------- */
+.marcas {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+}
+.marca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  margin: 10px;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+.marca img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.marca:hover {
+  transform: scale(2.1);
+}
+@media screen and (max-width: 768px) {
+  .marcas {
+    flex-wrap: wrap;
+  }
+}
 /* Estilo Redes social*/
 .social-media {
   display: flex;
@@ -114,7 +170,7 @@ main h1{
 }
 .descripcion{
   font-size: 19px;
-  text-align: center;
+  text-align: justify;
 }
 * {
   box-sizing: border-box;
@@ -297,12 +353,16 @@ p{
   font-size: 20px;
   padding: 8px;
 }
+.btnP p{
+  font-size: 30px;
+}
 /* Boton Fin*/
 .botonF {
   display: block;
   margin: 0 auto;
   background-color:rgb(23, 164, 179);
-  border: none;
+  border: 1px solid #17a4b3;
+  border-radius: 15px;
   color: white;
   text-align: center;
   padding: 10px 20px;
