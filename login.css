@@ -138,6 +138,27 @@ html {
     animation: btn-anim3 1s linear infinite;
     animation-delay: .5s
   }
+
+
+  .marcas {
+    display: flex;
+    justify-content: center;
+    margin-top: 750px;
+  }
+  
+  .marcas h3 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh; 
+    margin: 0;
+  }
+
+  
   
   @keyframes btn-anim3 {
     0% {

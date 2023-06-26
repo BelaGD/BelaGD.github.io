@@ -249,6 +249,25 @@ nav{
   .marca:hover {
     transform: scale(2.1);
   }
+
+  .marcas {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+  
+  .marcas h3 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh; 
+    margin: 0;
+  }
+
   @media screen and (max-width: 768px) {
     .marcas {
       flex-wrap: wrap;
