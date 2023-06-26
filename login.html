@@ -1,35 +1,65 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Login</title>
-	<link rel="stylesheet" href="login.css">
+  <title>Login</title>
+  <link rel="stylesheet" href="/login.css">
 </head>
-<!--INICIO MENU DE NAVEGACIO / OPCIONES-->
-<header>
-  <div class="titulo">
-    <h1>TecnoLANDIA</h1>
-  </div>
-</header>
 <body>
-	<nav>
-		<ul class="menu-horizontal">
-      <li class="letr" class="li"> <img class="imglog" src="Imagenes/TecnoLandia logo.jpg" alt=""></button></a></li>
-			<li><a href="index.html">Inicio</a></li>
-      <li><a href="nosotros.html">Nosotros</a></li>
-			<li>
-				<a href="tienda.html">Tienda</a>
-				<ul class="menu-vertical">
-					<li><a href="tienda.html">Laptops</a></li>
-					<li><a href="tienda_cel.html">Celulares</a></li>
-				</ul>
-			</li>
-			<li><a href="contactos.html">Contacto</a></li>
-			<li class="letr" class="li"> <a href="/login.html"><button class="login"><img class="imgcar" src="/Imagenes/icono login.png" alt=""></button></a></li>
-			<li class="letr" class="li"> <a href="carrito.html"><button class="carrito"><img class="imgcar" src="/Imagenes/icono carrito.png" alt=""></button></a></li>
-		</ul>
-	</nav>
-  <!--FIN MENU DE NAVEGACIO / OPCIONES-->
+    <div class="login-box">
+        <h2>Login</h2>
+        <form name="loginForm">
+          <div class="user-box">
+            <input type="text" name="username" required="">
+            <label>Usuario</label>
+            <div class="error-message" id="username-error"></div>
+          </div>
+          <div class="user-box">
+            <input type="password" name="password" required="">
+            <label>Contraseña</label>
+            <div class="error-message" id="password-error"></div>
+          </div>
+
+          <a href="#" onclick="validateForm()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Ingresar
+          </a>
+        </form>
+      </div>
+      
+      <script>
+        function validateForm() {
+          var username = document.forms["loginForm"]["username"].value;
+          var password = document.forms["loginForm"]["password"].value;
+          var usernameError = document.getElementById("username-error");
+          var passwordError = document.getElementById("password-error");
+          
+          // Restablecer mensajes de error
+          usernameError.innerHTML = "";
+          passwordError.innerHTML = "";
+          
+          // Validar si los campos están vacíos
+          if (username === "") {
+            usernameError.innerHTML = "Completar este campo";
+            return false; // Detener el envío del formulario
+          }
+          
+          if (password === "") {
+            passwordError.innerHTML = "Completar este campo";
+            return false; // Detener el envío del formulario
+          }
+          
+          // Validar el usuario y la contraseña aquí
+          if (username === "usuario" && password === "contraseña") {
+            alert("Inicio de sesión exitoso");
+            // Aquí puedes redirigir a otra página o realizar otras acciones después del inicio de sesión exitoso
+          } else {
+            alert("Usuario o contraseña incorrectos");
+          }
+        }
+      </script>
+      
 </body>
 </html>

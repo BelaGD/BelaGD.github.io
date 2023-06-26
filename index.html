@@ -1,43 +1,280 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Inicio</title>
-	<link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
 </head>
-<!--INICIO MENU DE NAVEGACIO / OPCIONES-->
-<header>
-  <div class="titulo">  
-    <h1>TecnoLANDIA</h1>
-  </div>
-</header>
 <body>
-	<nav>
-		<ul class="menu-horizontal">
-      <li class="letr" class="li"> <img class="imglog" src="Imagenes/TecnoLandia logo.jpg" alt=""></button></a></li>
-			<li><a href="index.html">Inicio</a></li>
-      <li><a href="nosotros.html">Nosotros</a></li>
-			<li>
-				<a href="tienda.html">Tienda</a>
-				<ul class="menu-vertical">
-					<li><a href="tienda.html">Laptops</a></li>
-					<li><a href="tienda_cel.html">Celulares</a></li>
-				</ul>
-			</li>
-			<li><a href="contactos.html">Contacto</a></li>
-			<li class="letr" class="li"> <a href="/login.html"><button class="login"><img class="imgcar" src="/Imagenes/icono login.png" alt=""></button></a></li>
-			<li class="car"><a href="carrito.html" >
-				<svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-				  <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-				</svg></a>
-			  </li>
-		</ul>
-	</nav>
-  <!--FIN MENU DE NAVEGACIO / OPCIONES-->
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-<script  src="assets/js/scripts.js"></script>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo" >TecnoLandia</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="Imagenes/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosostros</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Tienes <br> <span>hambre ?</span> </h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Culpa consectetur hic ipsa eaque voluptas vero laboriosam 
+                    architecto ratione illo error, doloremque corrupti aspernatur 
+                    itaque perspiciatis at, maiores sint molestias ex!
+                </p>
+
+                <div class="buttons">
+                    <a href="#" class="btn-1" >Ordena Ahora</a>
+                    <a href="#" class="btn-1" >Ver menu</a>
+                </div>
+            </div>
+            <div class="header-img">
+                <img src="Imagenes/right.png" alt="">                
+            </div>
+        </div>
+        
+
+    </header>
+
+    <section class="menu-pl container">
+
+        <h2>Nuestro top <span>menu</span> </h2>
+
+        <div class="general-content">
+
+            <div class="general-txt">
+                <img src="Imagenes/pl1.jpg" alt="">
+                <h3>Platillo lorem</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="prices">
+                    <span>$15.00</span>
+                    <a href="#" class="btn-2"> Comprar</a>
+                </div>
+            </div>
+
+            <div class="general-txt">
+                <img src="Imagenes/pl2.jpg" alt="">
+                <h3>Platillo lorem</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <div class="prices">
+                    <span>$15.00</span>
+                    <a href="#" class="btn-2"> Comprar</a>
+                </div>
+            </div>
+
+            <div class="general-txt">
+                <img src="Imagenes/pl3.jpg" alt="">
+                <h3>Platillo lorem</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <div class="prices">
+                    <span>$15.00</span>
+                    <a href="#" class="btn-2"> Comprar</a>
+                </div>
+            </div>
+            <span></span>
+        </div>
+    </section>
+
+    <section class="about">
+    
+        <div class="about-content container">
+            <div class="about-txt">
+                <h2>Oferta especial <br> <span>Una sorpresa para ti</span> </h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <div class="hamburger">
+                    <span>$25</span>
+                    <a href="#" class="btn-2"> Ordena ahora</a>
+                </div>
+            </div>
+
+            <div class="about-img">
+                <img src="Imagenes/hambuger.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-pl container">
+
+        <h2>Nuestro menu <span>menu</span> </h2>
+
+        <div class="general-content">
+
+            <div class="general-txt">
+                <img src="Imagenes/pl1.jpg" alt="">
+                <h3>Platillo lorem</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatum praesentium in, accusantium fuga aut a architecto 
+                    laborum deserunt molestiae sit, sint, sunt quaerat repellat 
+                    veritatis. Hic incidunt repudiandae temporibus animi.
+                </p>
+                <div class="prices">
+                    <span>$15.00</span>
+                    <a href="#" class="btn-2"> Comprar</a>
+                </div>
+            </div>
+
+            <div class="general-txt">
+                <img src="Imagenes/pl2.jpg" alt="">
+                <h3>Platillo lorem</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatum praesentium in, accusantium fuga aut a architecto 
+                    laborum deserunt molestiae sit, sint, sunt quaerat repellat 
+                    veritatis. Hic incidunt repudiandae temporibus animi.
+                </p>
+                <div class="prices">
+                    <span>$15.00</span>
+                    <a href="#" class="btn-2"> Comprar</a>
+                </div>
+            </div>
+
+            <div class="general-txt">
+                <img src="Imagenes/pl3.jpg" alt="">
+                <h3>Platillo lorem</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatum praesentium in, accusantium fuga aut a architecto 
+                    laborum deserunt molestiae sit, sint, sunt quaerat repellat 
+                    veritatis. Hic incidunt repudiandae temporibus animi.
+                </p>
+                <div class="prices">
+                    <span>$15.00</span>
+                    <a href="#" class="btn-2"> Comprar</a>
+                </div>
+            </div>
+
+            <div class="general-txt">
+                <img src="Imagenes/pl4.jpg" alt="">
+                <h3>Platillo lorem</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatum praesentium in, accusantium fuga aut a architecto 
+                    laborum deserunt molestiae sit, sint, sunt quaerat repellat 
+                    veritatis. Hic incidunt repudiandae temporibus animi.
+                </p>
+                <div class="prices">
+                    <span>$15.00</span>
+                    <a href="#" class="btn-2"> Comprar</a>
+                </div>
+            </div>
+
+            <div class="general-txt">
+                <img src="Imagenes/pl5.jpg" alt="">
+                <h3>Platillo lorem</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatum praesentium in, accusantium fuga aut a architecto 
+                    laborum deserunt molestiae sit, sint, sunt quaerat repellat 
+                    veritatis. Hic incidunt repudiandae temporibus animi.
+                </p>
+                <div class="prices">
+                    <span>$15.00</span>
+                    <a href="#" class="btn-2"> Comprar</a>
+                </div>
+            </div>
+
+            <div class="general-txt">
+                <img src="Imagenes/pl6.jpg" alt="">
+                <h3>Platillo lorem</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatum praesentium in, accusantium fuga aut a architecto 
+                    laborum deserunt molestiae sit, sint, sunt quaerat repellat 
+                    veritatis. Hic incidunt repudiandae temporibus animi.
+                </p>
+                <div class="prices">
+                    <span>$15.00</span>
+                    <a href="#" class="btn-2"> Comprar</a>
+                </div>
+            </div>
+            <span></span>
+        </div>
+    </section>
+
+    <section class="info container">
+
+        <div class="info-img">
+            <img src="Imagenes/left.jpg" alt="">
+        </div>
+
+        <div class="info-txt">
+            <h2>Sobre <span> Nosotros</span> </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto totam praesentium voluptas, distinctio veritatis 
+                ipsum unde velit sint facere at vero repellendus. 
+                Ducimus cum aliquid architecto, ea ipsam vel maiores?
+            </p>
+            <a href="#" class="btn-1"> Informacion</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
 </body>
 </html>
