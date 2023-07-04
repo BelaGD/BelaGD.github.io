@@ -107,13 +107,14 @@ nav{
     display: block;
 }
 .button-vaciar{
-    background:#f1f5f6;
+    background:#bee2eb;
     text-decoration: none;
     padding: 15px;
     margin-top: 15px;
     border-radius: 5px;
-    color:  #f2f2f2;
+    color:  #5d3333;
     font-weight: 700;
+}
 }
 .button-vaciar:hover{
     cursor: pointer;
